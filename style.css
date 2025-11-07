@@ -1,0 +1,268 @@
+/* ===== Global ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0f0f10;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;          /* 🧲 Fixes navbar at top */
+  top: 0;                   /* Aligns it to the very top */
+  left: 0;
+  width: 100%;              /* Full width */
+  background-color: #161617;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 8%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  z-index: 1000;            /* Keeps it above everything */
+}
+
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #030119;
+}
+
+.logo span {
+  color: #2c4af7;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e8e6f1;
+  text-shadow: 0 0 2px #e9ebec;
+}
+
+/* ===== Hero ===== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-text .name {
+  color: #6e10c1;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.hero-img img {
+  width: 430px;
+  /* border-radius: 0%; */
+  /* box-shadow: 0 0 25px #5a2de1; */
+  animation: float 5s ease-in-out infinite;
+}
+
+.btn {
+  display: inline-block;
+  background: #2e25e9;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #4a06f4;
+  box-shadow: 0 0 15px #3909e8;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* ===== About ===== */
+.about {
+    background-color: #161617;
+  padding: 50px;
+  /* text-align: center; */
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #2e07f3;
+  margin-top: 30px;
+  text-align: center;
+  
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+
+}
+
+/* ===== Projects ===== */
+.projects {
+    
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  color: #00bfff;
+  margin-bottom: 40px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: #1c1c1d;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #00bfff;
+}
+
+.project-card h3 {
+  color: #b968ff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #cfcfcf;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.btn-small {
+  background-color: #00bfff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-small:hover {
+  background-color: #008ccc;
+}
+
+/* ===== Contact ===== */
+.contact {
+  background-color: #161617;
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #00bfff;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #0b0b0c;
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-img img {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+/* === Hamburger menu (hidden on desktop) === */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #ccc;
+  cursor: pointer;
+}
+
+/* === Responsive Styles === */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #161617;
+    position: absolute;
+    top: 60px;
+    right: 8%;
+    width: 200px;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
