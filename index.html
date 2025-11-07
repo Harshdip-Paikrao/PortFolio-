@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshdip | Portfolio</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ===== Navbar ===== -->
+<header>
+  <nav class="navbar">
+    <div class="logo"><span>WebSpace </span></div>
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- ===== Hero Section ===== -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hey, I'm <span class="name">Harshdip</span></h1>
+      <p>I'm on a journey of <span id="typed">Web Development</span></p>
+      <a href="#projects" class="btn">See My Work</a>
+      <a href="#projects" class="btn">Resume</a>
+    </div>
+    <div class="hero-img">
+      <img src="bg.png.png" alt="Harshdip" />
+    </div>
+
+    <div class="section-divider"></div>
+
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I’m <b>Harshdip</b>, a passionate web developer who enjoys creating beautiful, user-friendly websites using
+      <b>HTML, CSS, and JavaScript</b>.  
+      I love bringing ideas to life with clean and responsive designs. My goal is to become a full-stack developer and
+      work on meaningful projects that make a real-world impact.
+    </p>
+
+    <div class="section-divider"></div>
+
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio built using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+        <a href="#" class="btn-small">View</a>
+      </div>
+      <div class="project-card">
+        <h3>Resume Builder</h3>
+        <p>A simple web app that helps users create and download professional resumes.</p>
+        <a href="#" class="btn-small">View</a>
+      </div>
+      
+
+    <div class="project-card">
+        <h3>To-Do App</h3>
+        <p>A productivity tool for managing daily tasks efficiently with local storage support.</p>
+        <!-- <a href="https://harshdip-paikrao.github.io/TODO-APP/" target="_blank" >View</a> -->
+
+        <button class="btn-small" onclick="window.open('https://harshdip-paikrao.github.io/TODO-APP/', '_blank') ">View</button>
+
+        <button class="btn-small" onclick="window.open('https://harshdip-paikrao.github.io/TODO-APP/', '_blank') ">See Code</button>
+      </div>
+    </div>
+    <div class="section-divider"></div>
+
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <p>Let's connect and collaborate! You can reach me at:</p>
+    <a href="mailto:harshdippaikrao2@gmail.com" class="btn">harshdippaikrao2@gmail.com</a>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2025 Harshdip | Designed with ❤️ using HTML, CSS & JS</p>
+  </footer>
+
+  <!-- Typed JS -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
