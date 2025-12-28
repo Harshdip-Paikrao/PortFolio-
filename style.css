@@ -220,14 +220,15 @@ footer {
 }
 
 /* ===== Responsive ===== */
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .hero {
     flex-direction: column-reverse;
     text-align: center;
   }
   .hero-img img {
-    width: 250px;
+    width: 200px;
     margin-bottom: 20px;
+    border-radius: 40%;
   }
 }
 
